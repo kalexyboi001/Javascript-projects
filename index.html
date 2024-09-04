@@ -1,0 +1,209 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+        body{
+            font-family: system-ui,-apple-system,BlinkMacSystemFont,
+             "Segeo UI",Roboto,Oxygen,
+              Ubuntu, Cantarell,
+              "Open Sans","Helvetica Neue",
+              sans-serif;
+              margin: 0;
+              padding: 0;
+              display: grid;
+              grid-template-columns: repeat(2,1fr);
+              grid-template-rows: repeat(2,1fr);
+              justify-content: center;
+              align-items: center;
+              text-align: center;
+              gap: 1;
+              height: 100vh;
+              background-image:url(./images/ABOUT\ US.svg);
+              background-position: no-repeat;
+              background-size: cover;
+              position: relative;
+
+              }
+
+              h2{
+                margin-bottom: 1rem;
+                font-size: 3em;
+                color: #333;
+              }
+
+              li{
+                font-size: 1.5em;
+                color: #666;
+                text-align: left;
+                list-style-type: decimal;
+              }
+
+              .show-container
+              {
+                display: grid;
+                justify-content: center;
+                align-items: center;
+                width: 600px;
+
+              }
+
+              .generation{
+                background-color: black;
+                color: white;
+                padding: 15px;
+                border-radius: 2px;
+                border: none;
+                font-size: 20px;
+                cursor: pointer;
+              }
+
+              .generation:hover{
+                background-color: white;
+                color: black;
+              }
+
+              .generateName{
+                background-color: black;
+                color: white;
+                padding: 15px;
+                border-radius: 2px;
+                border: none;
+                font-size: 20px;
+                cursor: pointer;
+                margin-left: 35px;
+                width: 350px;
+              }
+
+              .generateCountry{
+                background-color: black;
+                color: white;
+                padding: 15px;
+                border-radius: 4px;
+                border: none;
+                font-size: 20px;
+                cursor: pointer;
+                margin-left: -35px;
+              }
+
+              .generateCaptcha {
+                background-color: black;
+                color: white;
+                padding: 15px;
+                border-radius: 2px;
+                border: none;
+                font-size: 20px;
+                cursor: pointer;
+                margin-left: 10px;
+                width: 350px;
+              }
+
+              .generateName:hover,.generateCaptcha:hover,.generateCountry:hover{
+                background-color: white;
+                color: black;
+              }
+
+              .showCountry{
+                margin: 20px 0;
+                width: 250px;
+                height: 10vh;
+                margin-left: 10px;
+                background-color: goldenrod;
+                border-radius: 4px;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                font-size: 20px;
+              }
+
+              .showCaptcha {
+                margin: 20px 0;
+                width: 250px;
+                height: 10vh;
+                margin-left: 45px;
+                background-color: goldenrod;
+                border-radius: 4px;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                font-size: 20px;
+              }
+              
+
+              .showNumber{
+                margin: 20px 0;
+                width: 250px;
+                height: 10vh;
+                margin-left: 10px;
+                background-color: goldenrod;
+                border-radius: 4px;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                font-size: 20px;
+              }
+              .showName{
+                margin: 20px 0;
+                width: 250px;
+                height: 10vh;
+                margin-left: 50px;
+                background-color: goldenrod ;
+                border-radius: 4px;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                font-size: 20px;
+              }
+              p{
+                font-size: 20px;
+                font-weight: 500;
+                color: white;
+                background-color: black;
+                border-radius: 10px;
+                height: 6vh;
+                padding: 20px;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                margin-left: -10px;
+                margin-block: -10px;
+              }
+    </style>
+</head>
+<body>
+
+
+   <div class="show-container">
+    <p>Generates Random Numbers</p>
+    <h3 class="showNumber"></h3>
+    <button class="generation">Generate Random Number</button>
+   </div>
+
+   <div class="show-container">
+    <p>Winner of the Nigerian elections in 2027</p>
+    <h3 class="showName"></h3>
+    <button class="generateName">Generate Random Name</button>
+   </div>
+
+   <div class="show-container">
+    <p class="">Where would you be in 2026 ?</p>
+    <h3 class="showCountry"></h3>
+    <button class="generateCountry">Generate Random Country</button>
+   </div>
+
+   <div class="show-container">
+    <p class="">Display an anonymous string</p>
+    <h3 class="showCaptcha"></h3>
+    <button class="generateCaptcha">Generate captcha</button>
+   </div>
+
+
+
+    
+
+    <script src="script.js"></script>
+</body>
+</html>
